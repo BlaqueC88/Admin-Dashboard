@@ -1,28 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Dashboard</title>
-  <link rel="stylesheet" href="/Admin-Dashboard/style.css">
+	<title>Admin Dashbord html and css</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
 <body>
+	<input type="checkbox" id="menu" name="">
+	<div class="sidebar">
+		<div class="sidebar-brand">
+			<h2><span class="fa fa-user-o"></span>The Odin Project</h2>
+		</div>
 
-  <div class="container">
-    <div class="sidebar">
-      sidebar
-    </div>
-    <div class="header">
-      header
-    </div>
-    <div class="projects">
-      projects
-    </div>
-    <div class="announcements">
-      announcements
-    </div>
-  </div>
-  
+		<div class="sidebar-menu">
+			<ul>
+				<li>
+					<a href="" class="active"><span class="fa fa-home"></span><span>Home</span></a>
+				</li>
+				<li>
+					<a href=""><span class="fa fa-tasks"></span><span>Tasks</span></a>
+				</li>
+				<li>
+					<a href=""><span class="fa fa-th-large"></span><span>Blog</span></a>
+				</li>
+				<li>
+					<a href=""><span class="fa fa-line-chart"></span><span>Statistical</span></a>
+				</li>
+				<li>
+					<a href=""><span class="fa fa-address-book"></span><span>About</span></a>
+				</li>
+				<li>
+					<a href=""><span class="fa fa-clipboard"></span><span>Projets</span></a>
+				</li>
+				<li>
+					<a href=""><span class="fa fa-money"></span><span>Balance sheets</span></a>
+				</li>
+				<li>
+					<a href=""><span class="fa fa-registered"></span><span>Registration</span></a>
+				</li>
+
+				<li>
+					<a href=""><span class="fa fa-user"></span><span>Contacts</span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+
+	<div class="content">
+		
+		<header>
+			<p><label for="menu"><span class="fa fa-bars"></span></label><span class="acutex">Acutex</span></p>
+
+			<div class="search-wrapper">
+				<span class="fa fa-search"></span>
+				<input type="search" name="" placeholder="search" />
+			</div>
+
+			<div class="user-wrapper" id="dropdown">
+				<div>
+					<h4>Thokozani</h4>
+					<small>Admin</small>
+				</div>
+				
+				<img src="images/jellyfish.jfif" width="30" height="30" class="logo-admin">
+				<div class="dropdown-content">
+				<p>My profile</p>
+				<p>Logout</p>
+				</div>
+				
+			</div>
+		</header>
+
+		<main>
+			<div class="cards">
+				<div class="card-single">
+					<div>
+						<h2>53.827</h2>
+						<small>Sales</small>
+					</div>
+					<div>
+						<span class="fa fa-shopping-cart"></span>
+					</div>
+				</div>
+
+				<div class="card-single">
+					<div>
+						<h2>+80</h2>
+						<small>Stock</small>
+					</div>
+					<div>
+						<span class="fa fa-newspaper-o"></span>
+					</div>
+				</div>
+				<div class="card-single">
+					<div>
+						<h2>208</h2>
+						<small>Vendor</small>
+					</div>
+					<div>
+						<span class="fa fa-outdent"></span>
+					</div>
+				</div>
+				<div class="card-single">
+					<div>
+						<h2>28k</h2>
+						<small>Community</small>
+					</div>
+					<div>
+						<span class="fa fa-group"></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="making_up">
+				<div class="sales">
+					<div class="case">
+						<div class="header-case">
+							<h2>Product lists</h2>
+							<button class="button">see more<span class="fa fa-arrow-right"></span></button>
+						</div>
+						<div class="body-case">
+							<div class="picture">
+								<table width="100%">
+								  <thead>
+								    <tr>
+								      <td>First</td>
+								      <td>Last</td>
+								      <td>Handle</td>
+								    </tr>
+								  </thead>
+								  <tbody>
+								    <tr>
+								      <td>Thabiso</td>
+								      <td>Mukgadi</td>
+								      <td><span class="product-status color-one"></span>@nduku</td>
+								    </tr>
+								    <tr>
+								      <td>Senzo</td>
+								      <td>Menzo</td>
+								      <td><span class="product-status color-two"></span>@scathulo</td>
+								    </tr>
+								    <tr>
+								      <td>Thato</td>
+								      <td>Mungwe</td>
+								      <td><span class="product-status color-three"></span>@Nna_We</td>
+								    </tr>
+								     <tr>
+								      <td>Ntomb'entle</td>
+								      <td>Sbiya</td>
+								      <td><span class="product-status color-four"></span>@muhle</td>
+								    </tr>
+								     <tr>
+								      <td>Ntsako</td>
+								      <td>Shabangu</td>
+								      <td><span class="product-status color-five"></span>@Lawana</td>
+								    </tr>
+								  </tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="stock">
+					<div class="case">
+						<div class="header-case">
+							<h2>Loyal clients</h2>
+							
+						</div>
+						<div class="body-case">
+							<div class="all-users">
+								<div class="infos">
+								<img src="images/HD-wallpaper-jellyfish-summer-black-white-animal-blue.jpg" width="30" height="30">
+									<div>
+									<h4>Jabu</h4>
+									<small>Exciting</small>
+								</div>
+								</div>
+								
+							<div class="user-contact">
+								<span class="fa fa-facebook"></span>
+								<span class="fa fa-whatsapp"></span>
+								<span class="fa fa-phone"></span>
+							</div>
+						</div>
+
+								<div class="all-users">
+								<div class="infos">
+								<img src="images/australian-spotted-jellyfish-underwater-on-260nw-1425716099.webp" width="30" height="30">
+									<div>
+									<h4>Nthabi</h4>
+									<small>Jubilant</small>
+								</div>
+								</div>
+								
+							<div class="user-contact">
+								<span class="fa fa-facebook"></span>
+								<span class="fa fa-whatsapp"></span>
+								<span class="fa fa-phone"></span>
+							</div>
+						</div>
+
+								<div class="all-users">
+								<div class="infos">
+								<img src="images/jellyfish-21.jpg" width="30" height="30">
+									<div>
+									<h4>Princess</h4>
+									<small>Content</small>
+								</div>
+								</div>
+								
+							<div class="user-contact">
+								<span class="fa fa-facebook"></span>
+								<span class="fa fa-whatsapp"></span>
+								<span class="fa fa-phone"></span>
+							</div>
+						</div>
+
+						
+							<div class="all-users">
+								<div class="infos">
+								<img src="images/negative-space-jellyfish-wildlife-water-944x708.jpg" width="30" height="30">
+									<div>
+									<h4>Sizwe</h4>
+									<small>Not today</small>
+								</div>
+								</div>
+								
+							<div class="user-contact">
+								<span class="fa fa-facebook"></span>
+								<span class="fa fa-whatsapp"></span>
+								<span class="fa fa-phone"></span>
+							</div>
+						</div>
+						</div>
+						<button class="btn">see more<span class="fa fa-arrow-right"></span></button>
+					</div>
+				</div>
+				
+				<div class="statistical">
+					
+					<div class="closed_off bar1"></div>
+					<div class="closed_off bar2"></div>
+					<div class="closed_off bar3"></div>
+					<div class="closed_off bar4"></div>
+					<div class="closed_off bar5"></div>
+					<div class="closed_off bar6"></div>
+					<div class="closed_off bar5"></div>
+					<div class="closed_off bar6"></div>
+					<div class="closed_off bar5"></div>
+					<div class="closed_off bar6"></div>
+					<div class="closed_off bar4"></div>
+					<div class="closed_off bar5"></div>
+					<div class="closed_off bar6"></div>
+			</div>
+				<div class="legend">
+					<h4>Legend</h4>
+					<table>
+						<tr>
+							<td><span class="evolution color-one"></span>Tshepo</td>
+						</tr>
+						<tr>
+							<td><span class="evolution color-two"></span>Ntando</td>
+						</tr>
+					</table>
+					<div class="txt-deco">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="calendar">
+			<div class="months-year">
+			  <ul>
+			    <li class="prev">&#10094;</li>
+			    <li class="next">&#10095;</li>
+			    <li>June<br><span>2022</span></li>
+			  </ul>
+			</div>
+
+			<ul class="months">
+			  <li>Mo</li>
+			  <li>Tu</li>
+			  <li>We</li>
+			  <li>Th</li>
+			  <li>Fr</li>
+			  <li>Sa</li>
+			  <li>Su</li>
+			</ul>
+
+			<ul class="days">
+			  <li>1</li>
+			  <li>2</li>
+			  <li>3</li>
+			  <li>4</li>
+			  <li>5</li>
+			  <li>6</li>
+			  <li>7</li>
+			  <li>8</li>
+			  <li>9</li>
+			  <li><span class="active">10</span></li>
+			  <li>11</li>
+			  <li>12</li>
+			  <li>13</li>
+			  <li>14</li>
+			  <li>15</li>
+			  <li>16</li>
+			  <li>17</li>
+			  <li>18</li>
+			  <li>19</li>
+			  <li>20</li>
+			  <li>21</li>
+			  <li>22</li>
+			  <li>23</li>
+			  <li>24</li>
+			  <li>25</li>
+			  <li>26</li>
+			  <li>27</li>
+			  <li>28</li>
+			  <li>29</li>
+			  <li>30<li>
+			</ul>
+			</div>
+		</main>
+	</div>
 </body>
 </html>
